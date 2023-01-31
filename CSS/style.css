@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0
+  ;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "header header"
+  "aboutme aboutme" 
+  "skills skills"
+  "explorepage explorepage"
+  "chillpill chillpill"
+  "agriculture agriculture"
+  "footer footer";
+  grid-gap: 10px;
+}
+
+.header
+{
+ grid-area: header;
+ display: grid;
+}
+
+.aboutme
+{
+  grid-area: aboutme;
+  display: grid;
+}
+
+.skills
+{
+  grid-area: skills;
+  display: grid;
+}
+
+.explorepage
+{
+  grid-area: explorepage;
+  
+}
+
+.chillpill
+{
+  grid-area: chillpill;
+  display: grid;
+}
+
+
+.agriculture
+{
+  grid-area: agriculture;
+  display: grid;
+}
+
+.footer
+{
+  grid-area: footer;
+  display: grid;
+}
+
+
+.grid
+div:nth-child(even){
+  background-color: rgb(254, 131, 131);
+}
+
+.grid
+div:nth-child(odd){
+  background-color: rgb(148, 161, 255);
+}
+
+@media screen and (min-width: 736px) {
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 800px 800px 1fr;
+    grid-template-areas: 
+    ". header header ."
+    ". aboutme skills ."
+    ". explorepage explorepage ."
+    ". chillpill chillpill ."
+    ". agriculture agriculture ."
+    ". footer footer .";
+  }
+  
+}
